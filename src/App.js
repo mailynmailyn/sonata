@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from '@mui/material'; //this is to import the button from material ui
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button onClick={()=>alert('GAE')} variant='contained'> GET UR MOM'D </Button> 
       </header>
     </div>
   );
