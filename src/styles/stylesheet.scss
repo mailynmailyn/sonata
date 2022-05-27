@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Concert+One&family=Fredoka+One&display=swap');
+
+//fonts
+$Title: 'Fredoka One', cursive;
+$Header: 'Concert One', cursive;
+$Body_Text: 'Abel', sans-serif;
+
+//colours
+$light-yellow: #FFF2D2ff;
+$bg: #FFFBF5ff; //this is the off-white colour
+$text-black: #19191Dff;
+$main-blue: #293CDBff;
+$secondary-blue: #495BEBff;
+$tertiary-blue: #7987F6;
+$light-grey: #B3B3B3;
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border radius
+$borderRadius: 12px;
+
+//header height
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}

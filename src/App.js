@@ -1,10 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import { Button } from '@mui/material'; //this is to import the button from material ui
+import Navbar from './assets/Navbar.js';
 
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
