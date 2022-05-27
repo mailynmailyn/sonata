@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './styles/App.css';
 import { Button } from '@mui/material'; //this is to import the button from material ui
 import Navbar from './assets/Navbar.js';
+import logo from './assets/logo.svg'
 
 function App() {
   return (
