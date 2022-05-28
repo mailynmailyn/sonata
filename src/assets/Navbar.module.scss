@@ -4,6 +4,7 @@
     background: $bg;
     height: $headerHeight;
     padding: 0 1.5rem;
+    border-bottom: 2px solid $light-grey;
     @include breakpoint(md) {
         padding: 0 3rem;
     }
