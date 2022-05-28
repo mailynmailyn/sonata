@@ -2,7 +2,6 @@
 
 .header{
     background: $bg;
-    width: 100%;
     height: $headerHeight;
     padding: 0 1.5rem;
     @include breakpoint(md) {
