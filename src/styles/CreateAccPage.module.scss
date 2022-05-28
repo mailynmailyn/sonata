@@ -1,28 +1,28 @@
 @import './../styles/stylesheet.scss';
 
-.container {
-    min-height: 100vh;
-}
-
-.logo{
-    height: 35vmin;
-}
-
-
 .gridContainer {
-    border: 1px solid $text-black;
+    min-height: 100%;
     background-color: $bg;
     min-height: 100%;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 5rem 2rem 1rem 2rem;
     display: grid;
     grid-template-columns: 45% 55%;
 
+    &__logo{
+        height: 35vmin;
+    }
+
     &__createAcc {
-        font-family: $Title;
-        color: $main-blue;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+
+        &__header{
+            font-family: $Title;
+            color: $main-blue;
+            font-size: 8vmin;
+        }
 
         &__form{
             font-family: $Body_Text;
