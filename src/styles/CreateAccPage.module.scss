@@ -1,9 +1,105 @@
 @import './../styles/stylesheet.scss';
 
-.gridContainer {
+/*
+.content{
+    min-height: 100%;
+    height: 100vh;
+    background-color: $bg;
+    &__shape {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 38.7em;
+    }
+
+    &__container {
+        padding: 2.5rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top:0px;
+        left: 0px;*/
+
+.container {
     height: 100vh;
     background-color: $bg;
     min-height: 100%;
+
+    &__shape {
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        //height: 38.7em;
+    }
+
+    &__gridContainer {
+        padding: 0rem 2rem 1rem 2rem;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        position: relative;
+        top:0px;
+        left: 0px;
+    
+        &__logo{
+            margin-top: 55%;
+            margin-left: 25%;
+            height: 35vmin;
+        }
+    
+        &__createAcc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            &__header{
+                font-family: $Title;
+                color: $main-blue;
+                font-size: 8vmin;
+                margin-bottom: 0;
+                padding-top: 7rem;
+            }
+    
+            &__form{
+                margin-top: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__input{
+                    text-align: start;
+                    width: 20rem;
+                    font-family: $Body_Text;
+                    font-size: 1.2rem;
+                    color: $light-grey;
+                    padding: 10px;
+                    margin: 12px 12px;
+                    border-radius: $buttonRadius;
+                    border: 1.5px solid $light-grey;
+                }
+    
+                &__button{
+                    margin-top: 20px;
+                    width: 14rem;
+                    padding: 10px 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    background-color: $secondary-blue;
+                    border-radius: $buttonRadius;
+                    font-family: $Header;
+                    font-size: 1.5rem;
+                    color: white;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+.gridContainer {
     padding: 0rem 2rem 1rem 2rem;
     display: grid;
     grid-template-columns: 30% 70%;
