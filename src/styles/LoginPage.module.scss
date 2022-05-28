@@ -1,54 +1,109 @@
 @import './../styles/stylesheet.scss';
 
-.container {
-    min-height: 100vh;
-}
-
-.logo{
-    height: 35vmin;
-}
-
-.phoneIcon{
-    height: 30vmin;
-}
-
-.button{
-    width: 10vw;
-    height: 4vh;
-    background-color: white;
-    border: 0.25vmin solid $light-grey;
-    border-radius: $buttonRadius;
-}
-
 .gridContainer {
-    border: 1px solid $text-black;
+    min-width: fit-content;
+    height: 100vh;
     background-color: $bg;
-    min-height: 100%;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 5rem 4rem 1rem 1rem;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 60% 40%;
+    flex-wrap: wrap;
 
     &__login {
-        font-family: $Header;
-        color: $text-black;
-        border: 1px solid $text-black;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &__logo{
+            height: 25%;
+        }
+        &__title{
+            margin-top: 1px;
+            font-family: $Title;
+            font-size: 10vmin;
+            color: $main-blue;
+            margin-bottom: 10px;
+        }
 
         &__form{
             width: 50%;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            &__input{
+                text-align: start;
+                width: 20rem;
+                font-family: $Body_Text;
+                font-size: 1.2rem;
+                color: $light-grey;
+                padding: 10px;
+                margin: 12px 12px;
+                border-radius: $buttonRadius;
+                border: 1.5px solid $light-grey;
+            }
+
+            &__login{
+                margin-top: 10px;
+                width: 14rem;
+                padding: 10px 10px;
+                text-align: center;
+                text-decoration: none;
+                background-color: $secondary-blue;
+                border-radius: $buttonRadius;
+                font-family: $Header;
+                font-size: 1.5rem;
+                color: white;
+                border: 0;
+            }
         }
     }
     &__signUp {
+        //height: 70%;
+        height:fit-content;
         background-color: $light-yellow;
-        font-family: $Header;
-        color: $main-blue;
-        border: 1px solid $text-black;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        justify-self: center;
+        padding: 2rem;
+        border-radius: 3%;
+
+        &__header1{
+            margin-top: 30px;
+            font-family: $Title;
+            color: $tertiary-blue;
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        &__header2{
+            margin-top: 10px;
+            font-family: $Body_Text;
+            font-size: 1.3rem;
+            color: $text-black;
+        }
+
+        &__phoneIcon{
+            height: 35vmin;
+            margin-top: 10px;
+        }
+        
+        &__button{
+            margin-top: 25px;
+            margin-bottom: 40px;
+            padding: 10px 72px;
+            text-align: center;
+            text-decoration: none;
+            background-color: white;
+            border: 0.25vmin solid $light-grey;
+            border-radius: $buttonRadius;
+            font-family: $Header;
+            font-size: 1.5rem;
+            color: $secondary-blue;
+        }
     }
 }
