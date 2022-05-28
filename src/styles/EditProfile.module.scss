@@ -16,12 +16,7 @@
         color: $secondary-blue;
         margin:0;
         padding: 0;
-    } 
-    &__image{
-        width: 70px;
-        height: auto;
-    } 
-
+    }
 
 
 }
@@ -29,12 +24,29 @@
 .body{
     background: $bg;
     height: 100vh;
-    text-align: center;
+    text-align:center;
+    font-family: $Body_Text;
+    font-size: 1rem;
+    color: $text-black;
+    padding-top: 30px;
+
     &__bodytext{
         font-family: $Body_Text;
         font-size: 1rem;
         color: $text-black;
         margin:0;
         padding: 20px;
+    } 
+    &__pfp{
+        display:inline-block;
+    }
+    &__bio{
+        display:inline-block;
+        padding-left:50px;
+    }
+    &__img{
+        width: 50%;
+        height: auto;
+        padding-bottom: 20px;
     } 
 }

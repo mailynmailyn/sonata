@@ -9,7 +9,7 @@ function AboutPage(){
         <div classname= "AboutPage">
             <Navbar></Navbar>
             <header className= {classes.header}>
-                <img src={logo} className="App-logo" alt="logo" width='300'/>
+                <img src={logo} className={classes.header__img} alt="logo"/>
                 <h1 className= {classes.header__title}> About Sonata </h1>
                 <h2 className= {classes.header__subtitle}>  &#9834; Find your accompaniment &#9834; </h2>
             </header>
