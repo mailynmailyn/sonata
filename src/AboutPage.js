@@ -1,14 +1,15 @@
 import classes from './styles/AboutPage.module.scss'
 import { Button } from '@mui/material'; //this is to import the button from material ui
 import Navbar from './assets/Navbar.js';
-import logo from './assets/logo_cropped.svg'
+import logo from './assets/logo_cropped.svg';
+
 
 function AboutPage(){
     return(
         <div classname= "AboutPage">
             <Navbar></Navbar>
             <header className= {classes.header}>
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} className="App-logo" alt="logo" width='300'/>
                 <h1 className= {classes.header__title}> About Sonata </h1>
                 <h2 className= {classes.header__subtitle}>  &#9834; Find your accompaniment &#9834; </h2>
             </header>
@@ -19,6 +20,7 @@ function AboutPage(){
                 unites with their perfect accompaniment. </p>
                 <h2 className= {classes.header__subtitle}>  &#9835; </h2>
             </body>
+    
         </div>
     )
 }
