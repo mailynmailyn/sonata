@@ -1,7 +1,7 @@
 import Navbar from './assets/Navbar.js';
-import logo from './assets/logo.svg';
 import classes from './styles/MatchesPost.module.scss';
 import image from './assets/gude_temp.jpg';
+import logoCropped from './assets/logo_cropped.svg'
 
 const Card = ({username}) => (
     <div className={classes.card}>
@@ -19,7 +19,7 @@ function MatchesPost() {
     <div>
         <Navbar></Navbar>
         <div className={classes.container}>
-            <img src={logo} className={classes.logo} alt="logo" />
+            <img src={logoCropped} className={classes.logo} alt="logo" />
             <h1 className={classes.container__title}>Your Matches</h1>
             <div className={classes.container__cardContainer}>
                 <ul>
@@ -46,17 +46,3 @@ function MatchesPost() {
 }
 
 export default MatchesPost;
-
-/*
-<ul>
-                    <li>
-                        <a href = "/"> HOME </a>
-                    </li>
-                    <li>
-                        <a href = "/"> MATCHES </a>
-                    </li>
-                    <li>
-                        <a href = "/"> ABOUT US </a>
-                    </li>
-                </ul>
-*/

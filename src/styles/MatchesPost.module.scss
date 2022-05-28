@@ -6,8 +6,10 @@
         border: 2px solid black;
     }
     &__title {
+        margin-top: 0;
         font-family: $Title;
         font-size: 3rem;
+        color: $main-blue;
     }
 
     &__cardContainer{
