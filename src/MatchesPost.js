@@ -16,12 +16,12 @@ const Card = ({username}) => (
 
 function MatchesPost() {
   return (
-    <div>
+    <div className={classes.content}>
         <Navbar></Navbar>
-        <div className={classes.container}>
-            <img src={logoCropped} className={classes.logo} alt="logo" />
-            <h1 className={classes.container__title}>Your Matches</h1>
-            <div className={classes.container__cardContainer}>
+        <div className={classes.content__container}>
+            <img src={logoCropped} className={classes.content__container__logo} alt="logo" />
+            <h1 className={classes.content__container__title}>Your Matches</h1>
+            <div className={classes.content__container__cardContainer}>
                 <ul>
                     <li> 
                         <Card username="match 1"></Card>
