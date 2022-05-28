@@ -1,14 +1,16 @@
 import Navbar from './assets/Navbar.js';
-import logo from './assets/logo.svg'
+import logo from './assets/logo_cropped.svg'
 import classes from './styles/MatchesPre.module.scss'
 
 function MatchesPre() {
   return (
     <div className={classes.container}>
         <Navbar></Navbar>
-        <img src={logo} className={classes.logo} alt="logo" />
-        <h1>Your Matches</h1>
-        <button type="button" className={classes.button}>Find My Matches</button>
+        <div className={classes.container__content}>
+          <img src={logo} className={classes.container__content__logo} alt="logo" />
+          <h1 className={classes.container__content__title}>Your Matches</h1>
+          <button type="button" className={classes.container__content__button}>Find My Matches</button>
+        </div>
     </div>
   );
 }
