@@ -1,0 +1,35 @@
+@import './../styles/stylesheet.scss';
+
+.header{
+    background: $bg;
+    text-align: center;
+    &__title{
+        font-family: $Title;
+        font-size: 2.2rem;
+        color: $main-blue;
+        margin:0;
+        padding:10px;
+    } 
+    &__subtitle{
+        font-family: $Header;
+        font-size: 1rem;
+        color: $secondary-blue;
+        margin:0;
+        padding: 0;
+    } 
+
+
+}
+
+.body{
+    background: $bg;
+    height: 100vh;
+    text-align: center;
+    &__bodytext{
+        font-family: $Body_Text;
+        font-size: 1rem;
+        color: $text-black;
+        margin:0;
+        padding: 20px;
+    } 
+}
