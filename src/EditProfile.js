@@ -1,0 +1,35 @@
+import classes from './styles/EditProfile.module.scss';
+import { Button } from '@mui/material'; //this is to import the button from material ui
+import Navbar from './assets/Navbar.js';
+import logo from './assets/logo_cropped.svg';
+
+function EditProfile(){
+    return(
+        <div classname= "EditProfile">
+            <Navbar></Navbar>
+            <header className= {classes.header}>
+                <h1 className= {classes.header__title}> edit profile </h1>
+            </header>
+            <body className= {classes.body}>
+                <div className= {classes.body__pfp}>
+                <img src={logo} className= {classes.body__img} alt="logo"/>
+                <form action="/action_page.php">
+                    <label for="myfile">Select a profile picture:  </label>
+                    <input type="file" id="myfile" name="myfile"></input>
+                    <br></br>
+                </form>
+                </div>
+                <div className= {classes.body__bio}>
+                    <form>
+                        <textarea name="bio" rows="10" cols="50">
+                        Edit bio
+                        </textarea>
+                    </form>
+                    
+                </div>
+            </body>
+        </div>
+    )
+}
+
+export default EditProfile;
