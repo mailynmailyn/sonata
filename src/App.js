@@ -6,6 +6,7 @@ import logo from './assets/logo.svg';
 import AboutPage from './AboutPage.js';
 import LoginPage from './LoginPage.js';
 import EditProfile from "./EditProfile.js";
+import GenreSelection from "./GenreSelection.js";
 
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/editprofile' element={<EditProfile />} />
+        <Route path='/selectgenres' element={<GenreSelection />} />
       </Routes>
     </Router>
     
