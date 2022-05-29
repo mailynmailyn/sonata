@@ -14,7 +14,7 @@ function GenreSelection(){
             </header>
             <body className = {classes.body}>
                 <div>
-                    <input type="text" placeholder="Search.."></input>
+                    <input className = {classes.body__search} type="text" placeholder="Search.."></input>
                 </div>
                 
                 <div className = {classes.grid}>

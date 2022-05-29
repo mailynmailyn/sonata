@@ -35,7 +35,7 @@
     font-family: $Body_Text;
     font-size: 1rem;
     color: $text-black;
-    padding-top: 30px;
+    padding: 30px;
     
     &__button{
         margin-top: 25px;
@@ -50,6 +50,9 @@
         font-size: 1rem;
         color: white;
     }
+    &__search{
+        width: 500px;
+    }
 
 }
 
@@ -59,19 +62,23 @@
     grid-template-rows: 100px 100px 100px 100px 100px;
     gap: 10px;
     padding: 50px;
+    height:200px;
+    border: 0.25vmin solid $tertiary-blue;
+    overflow:scroll;
+    overflow-x:hidden;
 
     &__genreButton{
         size: 40px 40px;
         text-decoration: none;
-        background-color: $secondary-blue;
-        border: 0.25vmin solid $secondary-blue;
+        background-color: $tertiary-blue;
+        border: 0.25vmin solid $tertiary-blue;
         border-radius: $buttonRadius;
         font-family: $Header;
         font-size: 1rem;
         color: white;
         &:hover {
-            background: rgba($tertiary-blue, 0.5);
-            color: $secondary-blue;
+            background: $secondary-blue;
+            color: white;
         }
     }
 }
