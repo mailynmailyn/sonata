@@ -13,7 +13,7 @@ function EditProfile(){
             <body className= {classes.body}>
                 <div className= {classes.body__pfp}>
                 <img src={logo} className= {classes.body__img} alt="logo"/>
-                <form action="/action_page.php">
+                <form className= {classes.body__pfp__file} action="/action_page.php">
                     <label for="myfile">Select a profile picture:  </label>
                     <input type="file" id="myfile" name="myfile"></input>
                     <br></br>
@@ -25,7 +25,9 @@ function EditProfile(){
                         Edit bio
                         </textarea>
                     </form>
-                    
+                </div>
+                <div>
+                    <button type="button" className={classes.body__button}> save changes </button>
                 </div>
             </body>
         </div>
