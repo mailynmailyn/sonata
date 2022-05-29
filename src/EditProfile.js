@@ -21,9 +21,8 @@ function EditProfile(){
                 </div>
                 <div className= {classes.body__bio}>
                     <form>
-                        <textarea name="bio" rows="10" cols="50">
-                        Edit bio
-                        </textarea>
+                        <input className= {classes.body_bio} type= 'text' id="bio" >
+                        </input>
                     </form>
                 </div>
                 <div>
