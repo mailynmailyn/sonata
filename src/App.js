@@ -7,6 +7,7 @@ import AboutPage from './AboutPage.js';
 import LoginPage from './LoginPage.js';
 import EditProfile from "./EditProfile.js";
 import GenreSelection from "./GenreSelection.js";
+import Profile from "./Profile.js";
 
 import {
   BrowserRouter as Router,
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/editprofile' element={<EditProfile />} />
         <Route path='/selectgenres' element={<GenreSelection />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </Router>
     
