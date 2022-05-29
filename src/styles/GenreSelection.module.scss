@@ -1,0 +1,29 @@
+@import './../styles/stylesheet.scss';
+
+.header{
+    background: $bg;
+    text-align: center;
+    &__title{
+        font-family: $Header;
+        font-size: 1.2rem;
+        color: $secondary-blue;
+        margin:0;
+        padding:10px;
+        display:inline-block;
+    } 
+    &__subtitle{
+        font-family: $Header;
+        font-size: 1rem;
+        color: $secondary-blue;
+        margin:0;
+        padding: 0;
+    }
+    &__img{
+        width: 70px;
+        height: auto;
+        padding: 10px;
+    } 
+
+
+
+}
