@@ -11,23 +11,25 @@ function EditProfile(){
                 <h1 className= {classes.header__title}> edit profile </h1>
             </header>
             <body className= {classes.body}>
-                <div className= {classes.body__pfp}>
-                <img src={logo} className= {classes.body__img} alt="logo"/>
-                <form className= {classes.body__pfp__file} action="/action_page.php">
-                    <label for="myfile">Select a profile picture:  </label>
-                    <input type="file" id="myfile" name="myfile"></input>
-                    <br></br>
-                </form>
-                </div>
-                <div className= {classes.body__bio}>
-                    <form>
-                        <input className= {classes.body_bio} type= 'text' id="bio" >
-                        </input>
+                <div className = {classes.grid}>
+                    <div>
+                    <div className= {classes.card}>
+                        <img src={logo} className= {classes.card__img} alt="logo"/>     
+                    </div>
+                    <form className= {classes.body__pfp__file} action="/action_page.php">
+                            <label for="myfile">Select a profile picture:  </label>
+                            <input type="file" id="myfile" name="myfile"></input>
                     </form>
+                    </div>
+                    <div>
+                        <form>
+                            <textarea className= {classes.body__bio}> edit bio</textarea>
+                        </form>
+                    </div>
                 </div>
                 <div>
                     <button type="button" className={classes.body__button}> save changes </button>
-                </div>
+                </div>  
             </body>
         </div>
     )
