@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
-import LoginPage from './LoginPage';
-import MatchesPre from './MatchesPre';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MatchesPre />);
+root.render(<App />);
