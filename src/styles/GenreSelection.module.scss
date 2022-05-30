@@ -1,0 +1,84 @@
+@import './../styles/stylesheet.scss';
+
+.header{
+    background: $bg;
+    text-align: center;
+    &__title{
+        font-family: $Header;
+        font-size: 1.2rem;
+        color: $secondary-blue;
+        margin:0;
+        padding:10px;
+        display:inline-block;
+    } 
+    &__subtitle{
+        font-family: $Header;
+        font-size: 1rem;
+        color: $secondary-blue;
+        margin:0;
+        padding: 0;
+    }
+    &__img{
+        width: 70px;
+        height: auto;
+        padding: 10px;
+    } 
+
+
+
+}
+
+.body{
+    background: $bg;
+    height: 100vh;
+    text-align:center;
+    font-family: $Body_Text;
+    font-size: 1rem;
+    color: $text-black;
+    padding: 10px;
+    
+    &__button{
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $secondary-blue;
+        border: 0.25vmin solid $light-grey;
+        border-radius: $buttonRadius;
+        font-family: $Header;
+        font-size: 1rem;
+        color: white;
+    }
+    &__search{
+        width: 500px;
+    }
+
+}
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 10px;
+    padding: 50px;
+    height:200px;
+    border: 0.25vmin solid $tertiary-blue;
+    overflow:scroll;
+    overflow-x:hidden;
+
+    &__genreButton{
+        size: 40px 40px;
+        text-decoration: none;
+        background-color: $tertiary-blue;
+        border: 0.25vmin solid $tertiary-blue;
+        border-radius: $buttonRadius;
+        font-family: $Header;
+        font-size: 1rem;
+        color: white;
+        &:hover {
+            background: $secondary-blue;
+            color: white;
+        }
+    }
+}

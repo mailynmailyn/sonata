@@ -1,0 +1,98 @@
+@import './../styles/stylesheet.scss';
+
+.header{
+    background: $bg;
+    text-align: center;
+    &__title{
+        font-family: $Title;
+        font-size: 2.2rem;
+        color: $main-blue;
+        margin:0;
+        padding:10px;
+    } 
+    &__subtitle{
+        font-family: $Header;
+        font-size: 1rem;
+        color: $secondary-blue;
+        margin:0;
+        padding: 0;
+    }
+
+
+}
+
+.body{
+    background: $bg;
+    height: 100vh;
+    text-align:center;
+    font-family: $Body_Text;
+    font-size: 1rem;
+    color: $text-black;
+    padding-top: 30px;
+
+    &__bodytext{
+        font-family: $Body_Text;
+        font-size: 1rem;
+        color: $text-black;
+        margin:0;
+        padding: 20px;
+    } 
+    &__pfp{
+        display:inline-block;
+        &__file{
+            padding-top: 20px;
+        }
+    }
+    &__bio{
+        width: 100%;
+        height: 200px;
+        resize: none;
+
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 20px;
+        background-color: white;
+        border: 0.25vmin solid $light-grey;
+    } 
+    &__button{
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $secondary-blue;
+        border: 0.25vmin solid $light-grey;
+        border-radius: $buttonRadius;
+        font-family: $Header;
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: auto 30%;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.card{
+    border: 0.25vmin solid $light-grey;
+    background-color: white;
+    border-radius: 25%; 
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+
+    &__img{
+        width: 100%;
+        height: 100%;  
+        object-fit: contain;
+        border-radius: 25%;  
+    }
+}
