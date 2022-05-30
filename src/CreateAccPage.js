@@ -13,9 +13,9 @@ function CreateAccPage() {
         <div className = {classes.container__gridContainer__createAcc}> 
           <h1 className = {classes.container__gridContainer__createAcc__header}>create account</h1>
           <form className={classes.container__gridContainer__createAcc__form}>
-            <input type="text" className={classes.container__gridContainer__createAcc__form__input} value="email"></input>
-            <input type="text" className={classes.container__gridContainer__createAcc__form__input} value="username"></input>
-            <input type="text" className={classes.container__gridContainer__createAcc__form__input} value="password"></input>
+            <input type="text" className={classes.container__gridContainer__createAcc__form__input} placeholder="email"></input>
+            <input type="text" className={classes.container__gridContainer__createAcc__form__input} placeholder="username"></input>
+            <input type="text" className={classes.container__gridContainer__createAcc__form__input} placeholder="password"></input>
             <input type="submit" className={classes.container__gridContainer__createAcc__form__button} value="register"></input>
           </form>
         </div>

@@ -1,27 +1,5 @@
 @import './../styles/stylesheet.scss';
 
-/*
-.content{
-    min-height: 100%;
-    height: 100vh;
-    background-color: $bg;
-    &__shape {
-        position: absolute;
-        object-fit: cover;
-        width: 100%;
-        height: 38.7em;
-    }
-
-    &__container {
-        padding: 2.5rem 1rem 1rem 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top:0px;
-        left: 0px;*/
-
 .container {
     height: 100vh;
     background-color: $bg;
