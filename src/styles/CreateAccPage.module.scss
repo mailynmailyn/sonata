@@ -1,0 +1,34 @@
+@import './../styles/stylesheet.scss';
+
+.container {
+    min-height: 100vh;
+}
+
+.logo{
+    height: 35vmin;
+}
+
+
+.gridContainer {
+    border: 1px solid $text-black;
+    background-color: $bg;
+    min-height: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    &__createAcc {
+        font-family: $Title;
+        color: $main-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__form{
+            font-family: $Body_Text;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
