@@ -4,6 +4,7 @@ In terminal run:
 ```
 npm i node-sass
 npm install @mui/material @emotion/react @emotion/styled
+npm i react-router-dom
 ```
 
 to install the proper packages to run the site
