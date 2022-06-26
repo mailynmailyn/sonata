@@ -34,6 +34,11 @@ localhost:3000/about
 ```
 this will bring you to the about page of the website.
 
+**For the CSS pages**
+The pages we created for the assignment 2 to be marked and viewed are the ***scss*** pages in the ***styles*** folder (sonata/src/styles/)
+
+As discussed with the professor, scss pages were fine to be submitted for this assignment, however if there are any questions, please email either student about the code. 
+
 **For the HTML pages**
 The pages we created for the assignment 1 to be marked and viewed are: 
 
