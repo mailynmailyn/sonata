@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "username": "barb4eva",
+        "genres": [
+            "rap", "r&b", "pop"
+        ],
+        "bio": "skskskskkss barbzzzzzz",
+        "img": "idk for now"
+    },
+    {
+        "id": 2,
+        "username": "ryuichi sakamoto fan",
+        "genres": [
+            "alternative", "jazz", "pop"
+        ],
+        "bio": "skskskskkss ryuichisakamoto lol",
+        "img": "sksksk"
+    },
+    {
+        "id": 3,
+        "username": "monbebe hhehehehe",
+        "genres": [
+            "kpop", "rap"
+        ],
+        "bio": "skskskskkss monbebez",
+        "img": "sksks"
+    },
+    {
+        "id": 4,
+        "username": "nctizen",
+        "genres": [
+            "country", "alternative", "kpop"
+        ],
+        "bio": "skskskskkss nct go brrr",
+        "img": "sksksk"
+    },
+    {
+        "id": 5,
+        "username": "test profile",
+        "genres": [
+            "rap", "pop", "jazz"
+        ],
+        "bio": "skskskskkss nct go brrr",
+        "img": "sksksk"
+    }
+]
