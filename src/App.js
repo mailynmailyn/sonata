@@ -49,9 +49,16 @@ const App = () => {
   }
 
   const onMatchCardClick = (profileId) => {
-    console.log(profileId);
     setCurrentProfile(profileId);
     setPage('profile');
+  }
+
+  const onEditGenresBtnClicked = () => {
+    setPage('selectGenres');
+  }
+
+  const onEditProfileBtnClicked = () => {
+    setPage('editProfile');
   }
 
   return (
@@ -62,7 +69,7 @@ const App = () => {
       { currentPage == 'about' && <AboutPage/>}
       { currentPage == 'editProfile' && <EditProfile/>}
       { currentPage == 'selectGenres' && <GenreSelection/>}
-      { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()}/>}
+      { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()} onEditGenresClicked={onEditGenresBtnClicked} onEditProfileClicked = {onEditProfileBtnClicked}/>}
       { currentPage == 'getmatched' && <MatchesPre onMatchesClick={onMatchesBtnClicked}/>}
       { currentPage == 'matches' && <MatchesPost onCardClick={onMatchCardClick} 
         allProfiles={json.filter(profile => profile.id!= 6).sort(function (a, b) {return b.percent - a.percent;})}/>}
