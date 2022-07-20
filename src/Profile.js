@@ -9,17 +9,17 @@ import logo from './assets/logo_cropped.svg';
 
 function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
     return(
-        <Col className = "GenreSelection">
+        <div className = "GenreSelection">
             <body className = {classes.body}>
-                <div className = {classes.grid}>
-                    <div>
-                        <img src={logo} alt="logo"/>
-                    </div>
-                    <div>
-                        <h1 className = {classes.body__title}>{currentProfile.username} </h1>
-                        <h5 className = {classes.body__bio}> {currentProfile.bio} </h5>
-                        { currentProfile.id ==6 && <button onClick = {() => onEditProfileClicked()}> edit profile </button> }
-                    </div>
+                <div>
+                    <img src={currentProfile.img} alt="logo"/>
+                </div>
+                <div>
+                    <h1 className = {classes.body__title}>{currentProfile.username} </h1>
+                </div>
+                <div>
+                    <h5 className = {classes.body__bio}> {currentProfile.bio} </h5>
+                    { currentProfile.id ==6 && <button onClick = {() => onEditProfileClicked()}> edit profile </button> }
                 </div>
                 <h2 className = {classes.body__subtitle}> favourite genres </h2>
                 <div className = {classes.secondaryGrid}>
@@ -31,7 +31,7 @@ function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
                     { currentProfile.id ==6 && <button onClick = {() => onEditGenresClicked()}> edit genres </button> }
                 </div>
             </body>
-        </Col>
+        </div>
     )
 }
 

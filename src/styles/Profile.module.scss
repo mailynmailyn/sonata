@@ -4,6 +4,7 @@
 .body{
     background: $bg;
     height: 100vh;
+    text-align: center;
 
     &__title{
         font-family: $Title;
@@ -18,14 +19,14 @@
         font-size: 1.5rem;
         color: $secondary-blue;
         margin:0;
-        padding-left: 200px;
         padding-top: 30px;
     }
     &__bio{
         font-family: $Body_Text;
         font-size: 1rem;
         color: $text-black;
-        margin:0;
+        text-align: center;
+        width: 300px;
         padding: 10px;
         background: white;
         border: 0.25vmin solid $light-grey;
