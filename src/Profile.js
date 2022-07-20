@@ -8,10 +8,9 @@ import logo from './assets/logo_cropped.svg';
 // import { Profiler } from 'react';
 
 
-function Profile({currentProfile}){
+function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
     return(
         <Col className = "GenreSelection">
-            <Navbar></Navbar>
             <body className = {classes.body}>
                 <div className = {classes.grid}>
                     <div>
@@ -20,7 +19,7 @@ function Profile({currentProfile}){
                     <div>
                         <h1 className = {classes.body__title}>{currentProfile.username} </h1>
                         <h5 className = {classes.body__bio}> {currentProfile.bio} </h5>
-                        <button> edit profile </button>
+                        <button onClick = {() => onEditProfileClicked()}> edit profile </button>
                     </div>
                 </div>
                 <h2 className = {classes.body__subtitle}> favourite genres </h2>
@@ -30,7 +29,7 @@ function Profile({currentProfile}){
                             <button type="button" className={classes.body__genreButton}> {genre} </button>
                         ))}
                     </div>
-                    <button> edit genres </button>
+                    <button onClick = {() => onEditGenresClicked()}> edit genres </button>
                 </div>
             </body>
         </Col>
