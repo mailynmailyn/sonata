@@ -5,17 +5,26 @@ import logo from './assets/logo_cropped.svg';
 import Select from 'react-select';
 import React, {useState} from "react";
 
-function GenreSelection({currentProfile}){
+function GenreSelection({onEditGenres}){
 
-    // const functionName = () => {
-    //     get new bio
-    //     console.log{bio} //edit genres, passed into bigfunction 
+    const passGenres = (genres) => {
+        const genreArray = [];
+        console.log(genres); //edit genres, passed into bigfunction 
+        genres.map((genre) => (
+            genreArray.push(genre.value)
+        ))
+        
+        console.log(genreArray);
+        onEditGenres(genreArray);
 
 
-    // }
-
+    }
 
     const [selectedOptions, setSelectedOptions] = useState();
+
+    function handleSelect(data) {
+        setSelectedOptions(data);
+      }
 
     const options = [
         { value: 'rock', label: 'Rock' },
@@ -39,8 +48,8 @@ function GenreSelection({currentProfile}){
                 <img src={logo} className= {classes.header__img} alt="logo"/>
             </header>
             <body className = {classes.body}>
-                <div>
-                    <Select options={options} value={selectedOptions} isMulti/>
+                <div className = {classes.body__search}>
+                    <Select placeholder= "Search" options={options} value={selectedOptions} onChange={handleSelect} isMulti/>
                 </div>
                 
                 <div className = {classes.grid}>
@@ -56,7 +65,7 @@ function GenreSelection({currentProfile}){
                     <button type="button" className={classes.grid__genreButton}> alternative </button>
                     <button type="button" className={classes.grid__genreButton}> electronic </button>
 
-                    <button type="button" className={classes.grid__genreButton}> genre </button>
+                    <button type="button" className={classes.grid__genreButton}> rap </button>
                     <button type="button" className={classes.grid__genreButton}> genre </button>
                     <button type="button" className={classes.grid__genreButton}> genre </button>
                     <button type="button" className={classes.grid__genreButton}> genre </button>
@@ -77,7 +86,7 @@ function GenreSelection({currentProfile}){
                 </div>
 
                 <div>
-                    <button type="button" className={classes.body__button}> continue </button>
+                    <button type="button" className={classes.body__button} onClick={() => passGenres(selectedOptions)}> continue </button>
                 </div>
             </body>
 
