@@ -3,7 +3,7 @@ import { Button } from '@mui/material'; //this is to import the button from mate
 import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
 
-function EditProfile(){
+function EditProfile({onEditProfile}){
     return(
         <div classname= "EditProfile">
             <header className= {classes.header}>
@@ -27,7 +27,7 @@ function EditProfile(){
                     </div>
                 </div>
                 <div>
-                    <button type="button" className={classes.body__button}> save changes </button>
+                    <button type="button" className={classes.body__button} onClick={() => onEditProfile("new bio")}> save changes </button>
                 </div>  
             </body>
         </div>

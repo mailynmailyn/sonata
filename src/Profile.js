@@ -7,7 +7,6 @@ import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
 // import { Profiler } from 'react';
 
-
 function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
     return(
         <Col className = "GenreSelection">
