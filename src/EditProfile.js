@@ -3,13 +3,12 @@ import { Button } from '@mui/material'; //this is to import the button from mate
 import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
 
-function EditProfile({onEditProfile}){
+function EditProfile({onEditProfile, currentProfile}){
     
-    // const passNewBio = (bio) => {
-    //     console.log("bruh");
-    //     console.log(bio); //edit genres, passed into bigfunction 
-    //     onEditProfile(bio);
-    // }
+    const passNewBio = (bio) => {
+        console.log(bio); //edit genres, passed into bigfunction 
+        
+    }
 
 
     return(
@@ -30,10 +29,10 @@ function EditProfile({onEditProfile}){
                     </div>
                     <div>
                         <form>
-                            <textarea id = "bio" className= {classes.body__bio}> edit bio </textarea>
+                            <textarea id = "bio" className= {classes.body__bio} defaultValue= {currentProfile.bio}></textarea>
                         </form>
                     </div>
-                </div>
+                </div>  
                 <div>
                     <button type="button" className={classes.body__button} onClick={() => onEditProfile(document.getElementById('bio').value)}> save changes </button>
                 </div>  
