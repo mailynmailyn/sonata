@@ -68,7 +68,7 @@ const App = () => {
       { currentPage == 'createAccount' && <CreateAcc/>}
       { currentPage == 'about' && <AboutPage/>}
       { currentPage == 'editProfile' && <EditProfile/>}
-      { currentPage == 'selectGenres' && <GenreSelection/>}
+      { currentPage == 'selectGenres' && <GenreSelection currentProfile={getCurrentProfile()}/>}
       { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()} onEditGenresClicked={onEditGenresBtnClicked} onEditProfileClicked = {onEditProfileBtnClicked}/>}
       { currentPage == 'getmatched' && <MatchesPre onMatchesClick={onMatchesBtnClicked}/>}
       { currentPage == 'matches' && <MatchesPost onCardClick={onMatchCardClick} 

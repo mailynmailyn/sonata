@@ -19,7 +19,7 @@ function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
                     <div>
                         <h1 className = {classes.body__title}>{currentProfile.username} </h1>
                         <h5 className = {classes.body__bio}> {currentProfile.bio} </h5>
-                        <button onClick = {() => onEditProfileClicked()}> edit profile </button>
+                        { currentProfile.id ==6 && <button onClick = {() => onEditProfileClicked()}> edit profile </button> }
                     </div>
                 </div>
                 <h2 className = {classes.body__subtitle}> favourite genres </h2>
@@ -29,7 +29,7 @@ function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
                             <button type="button" className={classes.body__genreButton}> {genre} </button>
                         ))}
                     </div>
-                    <button onClick = {() => onEditGenresClicked()}> edit genres </button>
+                    { currentProfile.id ==6 && <button onClick = {() => onEditGenresClicked()}> edit genres </button> }
                 </div>
             </body>
         </Col>

@@ -2,8 +2,35 @@ import classes from './styles/GenreSelection.module.scss'
 import { Button } from '@mui/material'; //this is to import the button from material ui
 import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
+import Select from 'react-select';
+import React, {useState} from "react";
 
-function GenreSelection(){
+function GenreSelection({currentProfile}){
+
+    // const functionName = () => {
+    //     get new bio
+    //     console.log{bio} //edit genres, passed into bigfunction 
+
+
+    // }
+
+
+    const [selectedOptions, setSelectedOptions] = useState();
+
+    const options = [
+        { value: 'rock', label: 'Rock' },
+        { value: 'indie', label: 'Indie' },
+        { value: 'r&b', label: 'R&B' },
+        { value: 'classical', label: 'Classical' },
+        { value: 'jazz', label: 'Jazz' },
+        { value: 'shoegaze', label: 'Shoegaze' },
+        { value: 'pop', label: 'Pop' },
+        { value: 'folk', label: 'Folk' },
+        { value: 'rap', label: 'Rap' },
+        { value: 'electronic', label: 'Electronic' }
+      ]
+
+
     return(
         <div className = "GenreSelection">
             <header className= {classes.header}>
@@ -13,7 +40,7 @@ function GenreSelection(){
             </header>
             <body className = {classes.body}>
                 <div>
-                    <input className = {classes.body__search} type="text" placeholder="Search.."></input>
+                    <Select options={options} value={selectedOptions} isMulti/>
                 </div>
                 
                 <div className = {classes.grid}>
