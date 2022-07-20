@@ -9,14 +9,17 @@ function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
         <div className = "GenreSelection">
             <body className = {classes.body}>
                 <div>
-                    <img src={currentProfile.img} alt="logo"/>
+                { currentProfile.id ==6 && <img className = {classes.card__img} src={logo} alt="logo"/>}
+                { currentProfile.id !=6 && <img className = {classes.card__img} src={currentProfile.img} alt="logo"/>}
                 </div>
                 <div>
                     <h1 className = {classes.body__title}>{currentProfile.username} </h1>
                 </div>
-                <div>
+                <div className = {classes.body__title}>
                     <h5 className = {classes.body__bio}> {currentProfile.bio} </h5>
-                    { currentProfile.id ==6 && <button onClick = {() => onEditProfileClicked()}> edit profile </button> }
+                </div>
+                <div>
+                { currentProfile.id ==6 && <button onClick = {() => onEditProfileClicked()}> edit profile </button> }
                 </div>
                 <h2 className = {classes.body__subtitle}> favourite genres </h2>
                 <div className = {classes.secondaryGrid}>
