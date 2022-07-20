@@ -1,7 +1,4 @@
-import {Col} from 'react-bootstrap';
 import classes from './styles/Profile.module.scss';
-
-
 // import { Button } from '@mui/material'; //this is to import the button from material ui
 import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
@@ -9,7 +6,7 @@ import logo from './assets/logo_cropped.svg';
 
 function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
     return(
-        <Col className = "GenreSelection">
+        <div className = "GenreSelection">
             <body className = {classes.body}>
                 <div className = {classes.grid}>
                     <div>
@@ -31,7 +28,7 @@ function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
                     { currentProfile.id ==6 && <button onClick = {() => onEditGenresClicked()}> edit genres </button> }
                 </div>
             </body>
-        </Col>
+        </div>
     )
 }
 

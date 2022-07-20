@@ -51,8 +51,6 @@ const App = () => {
     setPage('profile');
   }
 
-  const [percentMatch, editPercentMatch] = useState([90,70,20,30,40]);
-
   //function for navbar links
   const onNavClick = (pageId) => {
     setPage(pageId);
@@ -95,6 +93,10 @@ const App = () => {
     setPage('editProfile');
   }
 
+  const getAllProfiles = () => {
+    return json.filter(profile => profile.id!= 6)
+  }
+
   return (
     <div>
       { loginFlag && <Navbar onNavLinkClick={onNavClick}/> }
@@ -106,7 +108,7 @@ const App = () => {
       { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()} onEditGenresClicked={onEditGenresBtnClicked} onEditProfileClicked = {onEditProfileBtnClicked}/>}
       { currentPage == 'getmatched' && <MatchesPre onMatchesClick={onMatchesBtnClicked}/>}
       { currentPage == 'matches' && <MatchesPost onCardClick={onMatchCardClick} 
-        allProfiles={json.filter(profile => profile.id!= 6).sort(function (a, b) {return b.percent - a.percent;})}/>}
+        allProfiles={getAllProfiles().sort(function (a, b) {return b.percent - a.percent;})}/>}
     </div>
   )
 }
