@@ -40,13 +40,15 @@ const App = () => {
     let temp = Object.assign({}, defaultProfile);
     temp.bio = newBio;
     editDefaultProfile(Object.assign({}, temp));
+    setPage('profile');
   }
 
   //passes in the new genres the user chose as an array of strings
   const onEditDefaultProfileGenres = (newGenres) => {
     let tempArr = Object.assign({}, defaultProfile);
     tempArr.genres = newGenres;
-    editDefaultProfile(Object.assign({}, tempArr))
+    editDefaultProfile(Object.assign({}, tempArr));
+    setPage('profile');
   }
 
   const [percentMatch, editPercentMatch] = useState([90,70,20,30,40]);
@@ -100,7 +102,7 @@ const App = () => {
       { currentPage == 'createAccount' && <CreateAcc/>}
       { currentPage == 'about' && <AboutPage/>}
       { currentPage == 'editProfile' && <EditProfile onEditProfile = {onEditDefaultProfileBio}/>}
-      { currentPage == 'selectGenres' && <GenreSelection/>}
+      { currentPage == 'selectGenres' && <GenreSelection onEditGenres = {onEditDefaultProfileGenres}/>}
       { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()} onEditGenresClicked={onEditGenresBtnClicked} onEditProfileClicked = {onEditProfileBtnClicked}/>}
       { currentPage == 'getmatched' && <MatchesPre onMatchesClick={onMatchesBtnClicked}/>}
       { currentPage == 'matches' && <MatchesPost onCardClick={onMatchCardClick} 

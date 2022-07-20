@@ -4,6 +4,14 @@ import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
 
 function EditProfile({onEditProfile}){
+    
+    // const passNewBio = (bio) => {
+    //     console.log("bruh");
+    //     console.log(bio); //edit genres, passed into bigfunction 
+    //     onEditProfile(bio);
+    // }
+
+
     return(
         <div classname= "EditProfile">
             <header className= {classes.header}>
@@ -22,12 +30,12 @@ function EditProfile({onEditProfile}){
                     </div>
                     <div>
                         <form>
-                            <textarea className= {classes.body__bio}> edit bio</textarea>
+                            <textarea id = "bio" className= {classes.body__bio}> edit bio </textarea>
                         </form>
                     </div>
                 </div>
                 <div>
-                    <button type="button" className={classes.body__button} onClick={() => onEditProfile("new bio")}> save changes </button>
+                    <button type="button" className={classes.body__button} onClick={() => onEditProfile(document.getElementById('bio').value)}> save changes </button>
                 </div>  
             </body>
         </div>
