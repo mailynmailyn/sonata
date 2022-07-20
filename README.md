@@ -1,38 +1,23 @@
-**TO RUN THE APP**
+**TO VIEW THE APP**
+The app is published at https://mailynmailyn.github.io/sonata/ 
 
-In terminal run:
-```
-npm i node-sass
-npm install @mui/material @emotion/react @emotion/styled
-npm i react-router-dom
-```
+**TO NAVIGATE TO THE PAGES**
+Login Page >> click the login button >> Home Page >> click matches button >> MatchesPre page >> click get matches button >> Matches Post page
+Login Page >> click the login button >> Home Page >> click about button >> About Page
+Login Page >> click the login button >> Home Page >> click edit profile >> Edit Bio page
+Login Page >> click the login button >> Home Page >> click edit genres >> Edit Genres page
+Login Page >> register button >> Create Account Page
 
-to install the proper packages to run the site
+*please refresh the website to navigatee back to the login page
 
-and run 
-```
-npm start
-``` 
-to start the app.
+**For the Javascript pages**
+Please view the following pages: 
 
-**TO NAVIGATE TO THE OTHER PAGES**
-
-Add the following to the end of the website's url: 
 ```
-/about
-/login
-/editprofile
-/selectgenres
-/profile
-/createaccount
-/getmatched
-/matches
+GenreSelection.js
+App.js
+EditProfile.js
 ```
-example url 
-```
-localhost:3000/about
-```
-this will bring you to the about page of the website.
 
 **For the CSS pages**
 The pages we created for the assignment 2 to be marked and viewed are the ***scss*** pages in the ***styles*** folder (sonata/src/styles/)
