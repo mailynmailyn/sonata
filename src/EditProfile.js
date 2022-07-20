@@ -6,7 +6,6 @@ import logo from './assets/logo_cropped.svg';
 function EditProfile(){
     return(
         <div classname= "EditProfile">
-            <Navbar></Navbar>
             <header className= {classes.header}>
                 <h1 className= {classes.header__title}> edit profile </h1>
             </header>
