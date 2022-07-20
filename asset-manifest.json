@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sonata/static/css/main.1d462176.css",
+    "main.js": "/sonata/static/js/main.01e91bb0.js",
+    "static/media/logo_cropped.svg": "/sonata/static/media/logo_cropped.dc94e306539dabc9a58ab87f934c92a5.svg",
+    "static/media/phone_icon.svg": "/sonata/static/media/phone_icon.0abd95d15246529b00e4d18b173043c8.svg",
+    "static/media/matches.svg": "/sonata/static/media/matches.4ed4b0b3da2d385f564d8c65090a919d.svg",
+    "static/media/createAcc.svg": "/sonata/static/media/createAcc.385e8ee2f4e896eeb951f9a229c0ef32.svg",
+    "index.html": "/sonata/index.html",
+    "main.1d462176.css.map": "/sonata/static/css/main.1d462176.css.map",
+    "main.01e91bb0.js.map": "/sonata/static/js/main.01e91bb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d462176.css",
+    "static/js/main.01e91bb0.js"
+  ]
+}
