@@ -1,8 +1,6 @@
 import classes from './styles/Profile.module.scss';
-// import { Button } from '@mui/material'; //this is to import the button from material ui
 import Navbar from './assets/Navbar.js';
 import logo from './assets/logo_cropped.svg';
-// import { Profiler } from 'react';
 
 function Profile({currentProfile, onEditGenresClicked, onEditProfileClicked}){
     return(
