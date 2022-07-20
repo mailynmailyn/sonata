@@ -7,7 +7,6 @@ import logo from './assets/logo_cropped.svg';
 function AboutPage(){
     return(
         <div classname= "AboutPage">
-            <Navbar></Navbar>
             <header className= {classes.header}>
                 <img src={logo} className={classes.header__img} alt="logo"/>
                 <h1 className= {classes.header__title}> About Sonata </h1>

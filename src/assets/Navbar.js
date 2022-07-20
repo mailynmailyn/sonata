@@ -1,19 +1,20 @@
 import classes from "./Navbar.module.scss"
 
-const Navbar = () => {
+function Navbar({onNavLinkClick}){
     return <header className={classes.header}>
         <div className= {classes.header__content}>
-            <h1 className= {classes.header__content__logo}> sonata </h1>
+            <h1 className= {classes.header__content__logo} 
+            onClick={() => onNavLinkClick("profile")}> sonata </h1>
             <nav className= {classes.header__content__nav}>
                 <ul>
-                    <li>
-                        <a href = "/"> HOME </a>
+                    <li onClick={() => onNavLinkClick("profile")}>
+                       HOME
                     </li>
-                    <li>
-                        <a href = "/"> MATCHES </a>
+                    <li onClick={() => onNavLinkClick("getmatched")}>
+                        MATCHES
                     </li>
-                    <li>
-                        <a href = "/"> ABOUT US </a>
+                    <li onClick={() => onNavLinkClick("about")}>
+                        ABOUT US 
                     </li>
                 </ul>
             </nav>
