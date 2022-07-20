@@ -22,6 +22,35 @@ const App = () => {
   const [currentProfile, setCurrentProfile] = useState(6);//describes what profile to populate the profile page with
   const [loginFlag, setLoginFlag] = useState(false);
 
+  //////////////////
+
+  const [defaultProfile, editDefaultProfile] = useState(
+    {
+      "id": 6,
+      "username": "test profile",
+      "genres": [
+          "rap", "pop", "jazz"
+      ],
+      "bio": "skskskskkss nct go brrr",
+      "img": "sksksk",
+      "percent": 100
+  });
+
+  const onEditDefaultProfileBio = (newBio) => {
+    let temp = Object.assign({}, defaultProfile);
+    temp.bio = newBio;
+    editDefaultProfile(Object.assign({}, temp));
+  }
+
+  //passes in the new genres the user chose as an array of strings
+  const onEditDefaultProfileGenres = (newGenres) => {
+    let tempArr = Object.assign({}, defaultProfile);
+    tempArr.genres = newGenres;
+    editDefaultProfile(Object.assign({}, tempArr))
+  }
+
+  const [percentMatch, editPercentMatch] = useState([90,70,20,30,40]);
+
   //function for navbar links
   const onNavClick = (pageId) => {
     setPage(pageId);
@@ -32,6 +61,9 @@ const App = () => {
 
   //function for finding which profile to populate the page with 
   const getCurrentProfile = () => {
+    if (currentProfile == 6){
+      return defaultProfile;
+    }
     return json.find(profile => profile.id == currentProfile);
   }
 
@@ -67,7 +99,7 @@ const App = () => {
       { currentPage == 'login' && <LoginPage onLoginClick={onLoginBtnClick} onCreateAccClick= {onCreateAccBtnClick} /> }
       { currentPage == 'createAccount' && <CreateAcc/>}
       { currentPage == 'about' && <AboutPage/>}
-      { currentPage == 'editProfile' && <EditProfile/>}
+      { currentPage == 'editProfile' && <EditProfile onEditProfile = {onEditDefaultProfileBio}/>}
       { currentPage == 'selectGenres' && <GenreSelection/>}
       { currentPage == 'profile' && <Profile currentProfile={getCurrentProfile()} onEditGenresClicked={onEditGenresBtnClicked} onEditProfileClicked = {onEditProfileBtnClicked}/>}
       { currentPage == 'getmatched' && <MatchesPre onMatchesClick={onMatchesBtnClicked}/>}
