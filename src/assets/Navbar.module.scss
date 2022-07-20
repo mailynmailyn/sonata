@@ -70,18 +70,16 @@
                             margin-right: $spacing-md;
                         }
                     }
-                    a {
-                        text-decoration: none;
-                        color: $text-black;
-                        font-family: $Header;
-                        font-size: 1.4rem;
-                        padding: 0.75rem 1.5rem;
-                        border-radius: $borderRadius;
-                        transition: 0.3s ease all;
+                    text-decoration: none;
+                    color: $text-black;
+                    font-family: $Header;
+                    font-size: 1.4rem;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: $borderRadius;
+                    transition: 0.3s ease all;
 
-                        &:hover {
-                            background: rgba($light-yellow, 0.5);
-                        }
+                    &:hover {
+                        background: rgba($light-yellow, 0.5);
                     }
                 }
             }

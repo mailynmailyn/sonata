@@ -6,7 +6,8 @@
             "rap", "r&b", "pop"
         ],
         "bio": "skskskskkss barbzzzzzz",
-        "img": "idk for now"
+        "img": "idk for now",
+        "percent": 90
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
             "alternative", "jazz", "pop"
         ],
         "bio": "skskskskkss ryuichisakamoto lol",
-        "img": "sksksk"
+        "img": "sksksk",
+        "percent": 9
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
             "kpop", "rap"
         ],
         "bio": "skskskskkss monbebez",
-        "img": "sksks"
+        "img": "sksks",
+        "percent": 97
     },
     {
         "id": 4,
@@ -33,15 +36,27 @@
             "country", "alternative", "kpop"
         ],
         "bio": "skskskskkss nct go brrr",
-        "img": "sksksk"
+        "img": "sksksk",
+        "percent": 67
     },
     {
         "id": 5,
+        "username": "aoidoiefj",
+        "genres": [
+            "country", "pop", "jazz"
+        ],
+        "bio": "skskskskkss nct go brrr",
+        "img": "sksksk",
+        "percent": 60
+    },
+    {
+        "id": 6,
         "username": "test profile",
         "genres": [
             "rap", "pop", "jazz"
         ],
         "bio": "skskskskkss nct go brrr",
-        "img": "sksksk"
+        "img": "sksksk",
+        "percent": 100
     }
 ]
